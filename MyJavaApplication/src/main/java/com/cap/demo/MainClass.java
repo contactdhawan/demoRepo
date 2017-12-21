@@ -6,6 +6,7 @@ public class MainClass {
 		SalesClass salesClass=new SalesClass();
 		salesClass.display();
 		greetings();
+		System.out.println(ColorConstants.RED);
 	}
 
 	
@@ -13,3 +14,22 @@ public class MainClass {
 		System.out.println("Welcome to GIT Repository");
 	}
 }
+
+enum ColorConstants{
+	RED("RED");
+	String color;
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	ColorConstants(String color){
+		this.color=color;
+	}
+	
+	
+} 
